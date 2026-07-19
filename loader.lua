@@ -31,4 +31,4 @@ if not uiSuccess then
     return
 end
 
-print("[WARCORE] Menu carregado com sucesso, meu rei!")
+print("[WARCORE] Core pronto.")
