@@ -5,7 +5,7 @@
 
 -- COLE OS LINKS "RAW" DO GITHUB AQUI DENTRO DAS ASPAS:
 local LINK_DO_CORE = "COLE_O_LINK_DO_CORE_LUA_AQUI"
-local LINK_DA_UI   = "COLE_O_LINK_DO_UI_LUA_AQUI"
+local LINK_DA_UI   = "https://raw.githubusercontent.com/blackayzer2-hash/Scriptqe/refs/heads/main/ui.lua"
 
 -- ========================================================
 -- SISTEMA DE CARREGAMENTO (Não precisa mexer abaixo)
