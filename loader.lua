@@ -1,28 +1,34 @@
 -- =============================================
 -- loader.lua - WARCORE ULTIMATE
--- Ponto de entrada do menu
+-- DESTINADO AO DELTA EXECUTOR E OUTROS
 -- =============================================
 
-local repo = "https://raw.githubusercontent.com/SEU_USUARIO/warcore/main/"
+-- COLE OS LINKS "RAW" DO GITHUB AQUI DENTRO DAS ASPAS:
+local LINK_DO_CORE = "COLE_O_LINK_DO_CORE_LUA_AQUI"
+local LINK_DA_UI   = "COLE_O_LINK_DO_UI_LUA_AQUI"
 
--- Carrega o core (funções) primeiro
+-- =============================================
+-- SISTEMA DE CARREGAMENTO (Não precisa mexer abaixo)
+-- =============================================
+
+-- 1. Carrega o core (funções) primeiro
 local coreSuccess, coreErr = pcall(function()
-    loadstring(game:HttpGet(repo .. "core.lua"))()
+    return loadstring(game:HttpGet(LINK_DO_CORE))()
 end)
 
 if not coreSuccess then
-    warn("[WARCORE] Erro ao carregar core.lua: " .. tostring(coreErr))
+    warn("[WARCORE] Erro ao carregar o arquivo Core: " .. tostring(coreErr))
     return
 end
 
--- Carrega a UI (menu)
+-- 2. Carrega a UI (menu) em seguida
 local uiSuccess, uiErr = pcall(function()
-    loadstring(game:HttpGet(repo .. "ui.lua"))()
+    return loadstring(game:HttpGet(LINK_DA_UI))()
 end)
 
 if not uiSuccess then
-    warn("[WARCORE] Erro ao carregar ui.lua: " .. tostring(uiErr))
+    warn("[WARCORE] Erro ao carregar o arquivo UI: " .. tostring(uiErr))
     return
 end
 
-print("[WARCORE] Menu carregado com sucesso!")
+print("[WARCORE] Menu carregado com sucesso, meu rei!")
