@@ -1,15 +1,15 @@
--- =============================================
+-- ========================================================
 -- loader.lua - WARCORE ULTIMATE
 -- DESTINADO AO DELTA EXECUTOR E OUTROS
--- =============================================
+-- ========================================================
 
 -- COLE OS LINKS "RAW" DO GITHUB AQUI DENTRO DAS ASPAS:
-local LINK_DO_CORE = "https://raw.githubusercontent.com/blackayzer2-hash/Scriptqe/refs/heads/main/core.lua"
-local LINK_DA_UI   = "https://raw.githubusercontent.com/blackayzer2-hash/Scriptqe/refs/heads/main/ui.lua"
+local LINK_DO_CORE = "COLE_O_LINK_DO_CORE_LUA_AQUI"
+local LINK_DA_UI   = "COLE_O_LINK_DO_UI_LUA_AQUI"
 
--- =============================================
+-- ========================================================
 -- SISTEMA DE CARREGAMENTO (Não precisa mexer abaixo)
--- =============================================
+-- ========================================================
 
 -- 1. Carrega o core (funções) primeiro
 local coreSuccess, coreErr = pcall(function()
